@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="dark-mode">
+            <svg class="none claro" xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+            <svg class="oscuro" xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+        </div>
+    </header>
+    <h1 class="titulo-principal">Seguimiento de Pacientes <span>Skin Elegant SPA</span></h1>
+
+    <div class="contenido flex container">
+        <div class="primario color">
+            <h2 class="titulo">
+                Seguimiento Pacientes
+            </h2>
+            <p class="subtitulo">Añade Pacientes y <span>Administralos</span></p>
+            <form id="formulario-cita" class="formulario">
+                <div class="input">
+                    <label for="nombre" class="texto-label">Nombre Paciente</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre del Paciente">
+                </div>
+                <div class="input">
+                    <label for="numero" class="texto-label">Número Telefonico</label>
+                    <input type="text" name="numero" id="numero" placeholder="Número Telefonico">
+                </div>
+                <div class="input">
+                    <label for="email" class="texto-label">Email Contacto</label>
+                    <input type="text" name="email" id="email" placeholder="E-mail Contacto">
+                </div>
+                <div class="input">
+                    <label for="fecha" class="texto-label">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div class="input">
+                    <label for="hora" class="texto-label">Hora</label>
+                    <input type="time" name="hora" id="hora">
+                </div>
+                <div class="input">
+                    <label for="motivo" class="texto-label">
+                        Motivo
+                    </label>
+                    <textarea id="motivo" name="motivo" placeholder="Motivo de consulta"></textarea>
+                </div>
+
+                <input type="submit" class="btn" value="Registrar Paciente">
+            </form>
+        </div>
+        <div class="secundario">
+            <h2 class="titulo">
+                Lista Pacientes
+            </h2>
+            <p class="subtitulo">Administra tus <span>Pacientes y Citas</span></p>
+            <div id="citas">
+                <p class="cita-parrafo">No hay Pacientes</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/darkMode.js"></script>
+</body>
+
+</html>
